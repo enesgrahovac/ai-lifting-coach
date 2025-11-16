@@ -195,7 +195,7 @@ export const addSetToExercise = (
   const exercise = day.exercises.find((e: Exercise) => e.id === exerciseId);
   if (!exercise) return data;
 
-  const newSetId = (Math.max(...exercise.sets.map(s => parseInt(s.id, 10) || 0)) + 1).toString();
+  const newSetId = (Math.max(...exercise.sets.map((s: Set) => parseInt(s.id, 10) || 0)) + 1).toString();
   exercise.sets.push({
     id: newSetId,
     reps: 8,
