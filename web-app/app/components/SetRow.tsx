@@ -86,14 +86,14 @@ export function SetRow({ setNumber, set, onUpdate, onRemove }: SetRowProps) {
           {set.completed ? '✓ Done' : 'Mark'}
         </button>
 
-        {/* Delete Button */}
-        <button
+        {/* Delete Button - TODO: Re-enable with confirmation dialog */}
+        {/* <button
           onClick={onRemove}
           className="px-4 py-2 text-red-600 hover:bg-red-50 rounded-lg transition-colors dark:text-red-400 dark:hover:bg-red-950 min-h-10 text-sm md:text-base"
           title="Delete set"
         >
           Remove
-        </button>
+        </button> */}
       </div>
     </div>
   );

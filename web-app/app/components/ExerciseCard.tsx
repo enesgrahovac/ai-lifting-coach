@@ -46,7 +46,8 @@ export function ExerciseCard({
             </p>
           </div>
         </div>
-        <button
+        {/* TODO: Re-enable with confirmation dialog */}
+        {/* <button
           onClick={(e) => {
             e.stopPropagation();
             onRemoveExercise();
@@ -55,7 +56,7 @@ export function ExerciseCard({
           title="Delete exercise"
         >
           Remove
-        </button>
+        </button> */}
       </div>
 
       {/* Sets */}
